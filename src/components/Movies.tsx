@@ -8,7 +8,7 @@ export type Props = {
 
 export function Movies({ movies, onSelect }: Props) {
   return (
-    <ul className="overflow-y-scroll list-none p-6 flex flex-col gap-10 h-screen">
+    <ul className="overflow-y-scroll list-none p-6 flex flex-col gap-2 h-screen">
       {movies?.map((movie) => (
         <Movie key={movie.imdbID} movie={movie} onSelect={onSelect} />
       ))}

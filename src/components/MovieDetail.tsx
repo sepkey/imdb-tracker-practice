@@ -76,12 +76,6 @@ export function MovieDetail({
             </div>
           </header>
 
-          {/* 
-.details-overview p {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-} */}
           <section className="p-16 flex flex-col gap-6">
             <div className="bg-slate-100 py-8 px-10 rounded-md mb-3 font-medium flex flex-col gap-10">
               {iswatched ? (

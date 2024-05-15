@@ -12,6 +12,7 @@ export default function App() {
   const { movies, isFetching: isFetchingMovies } = useGetMovies(query);
   const [selected, setSelected] = useState<string | null>(null);
   const [watched, setWatched] = useLocalStorage([], 'watched');
+
   function handleSelectMovie(id: string) {
     setSelected((selectedId) => (id === selectedId ? null : id));
   }
@@ -32,7 +33,7 @@ export default function App() {
       <SearchBox query={query} setQuery={setQuery} />
       <main className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-10 ">
         <div className="w-auto rounded-sm border-2 border-slate-200">
-          <h2 className="text-center text-slate-800 font-bold text-xl mb-4">
+          <h2 className="text-center text-slate-800 font-bold text-xl my-4">
             List of movies
           </h2>
           {isFetchingMovies ? (
