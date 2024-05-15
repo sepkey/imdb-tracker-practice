@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { getMovies } from '../services/getMovies';
+import { getMovies } from '../services/getMovies.service';
 
 export default function useGetMovies(query: string) {
   const { isFetching, data: movies } = useQuery({

@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { getMovie } from '../services/getMovie';
+import { getMovie } from '../services/getMovie.service';
 
 export default function useGetMovie(
   movieId: string = '',
